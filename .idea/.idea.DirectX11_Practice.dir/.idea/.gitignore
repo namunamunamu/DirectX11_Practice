@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.DirectX11_Practice.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\kencoor\Documents\DirectX11_Practice\.idea\.idea.DirectX11_Practice.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
