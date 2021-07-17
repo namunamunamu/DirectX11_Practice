@@ -151,6 +151,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AlignedAllocationPolicy.h" />
+    <ClInclude Include="D3DClass.h" />
     <ClInclude Include="GraphicsClass.h" />
     <ClInclude Include="InputClass.h" />
     <ClInclude Include="SystemClass.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="DxDefine.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="D3DClass.cpp" />
     <ClCompile Include="DX11_Prac.cpp" />
     <ClCompile Include="GraphicsClass.cpp" />
     <ClCompile Include="InputClass.cpp" />
