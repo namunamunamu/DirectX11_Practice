@@ -42,6 +42,15 @@
     <ClInclude Include="D3DClass.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ColorShaderClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DX11_Prac.cpp">
@@ -59,6 +68,15 @@
     <ClCompile Include="D3DClass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ColorShaderClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DX11_Prac.rc">
@@ -72,5 +90,9 @@
     <Image Include="DX11_Prac.ico">
       <Filter>리소스 파일</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Color.ps" />
+    <None Include="Color.vs" />
   </ItemGroup>
 </Project>
