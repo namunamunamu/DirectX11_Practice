@@ -2,7 +2,7 @@
 #include "d3dclass.h"
 #include "cameraclass.h"
 #include "modelclass.h"
-#include "colorshaderclass.h"
+#include "Textureshaderclass.h"
 #include "graphicsclass.h"
 
 
@@ -55,21 +55,21 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// m_Model °´Ã¼ ÃÊ±âÈ­
-	if (!m_Model->Initialize(m_Direct3D->GetDevice()))
+	if (!m_Model->Initialize(m_Direct3D->GetDevice(), m_Direct3D->GetDeviceContext(), "../Dx11Demo_04/data/stone01.tga"))
 	{
 		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
 		return false;
 	}
 
 	// m_ColorShader °´Ã¼ »ı¼º
-	m_ColorShader = new ColorShaderClass;
-	if (!m_ColorShader)
+	m_TextureShader = new TextureShaderClass;
+	if (!m_TextureShader)
 	{
 		return false;
 	}
 
 	// m_ColorShader °´Ã¼ ÃÊ±âÈ­
-	if (!m_ColorShader->Initialize(m_Direct3D->GetDevice(), hwnd))
+	if (!m_TextureShader->Initialize(m_Direct3D->GetDevice(), hwnd))
 	{
 		MessageBox(hwnd, L"Could not initialize the color shader object.", L"Error", MB_OK);
 		return false;
@@ -82,11 +82,11 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 void GraphicsClass::Shutdown()
 {
 	// m_ColorShader °´Ã¼ ¹İÈ¯
-	if (m_ColorShader)
+	if (m_TextureShader)
 	{
-		m_ColorShader->Shutdown();
-		delete m_ColorShader;
-		m_ColorShader = 0;
+		m_TextureShader->Shutdown();
+		delete m_TextureShader;
+		m_TextureShader = 0;
 	}
 
 	// m_Model °´Ã¼ ¹İÈ¯
@@ -139,7 +139,7 @@ bool GraphicsClass::Render()
 	m_Model->Render(m_Direct3D->GetDeviceContext());
 
 	// »ö»ó ½¦ÀÌ´õ¸¦ »ç¿ëÇÏ¿© ¸ğµ¨À» ·»´õ¸µÇÕ´Ï´Ù.
-	if (!m_ColorShader->Render(m_Direct3D->GetDeviceContext(), m_Model->GetIndexCount(), worldMatrix, viewMatrix, projectionMatrix))
+	if (!m_TextureShader->Render(m_Direct3D->GetDeviceContext(), m_Model->GetIndexCount(), worldMatrix, viewMatrix, projectionMatrix, m_Model->GetTexture()))
 	{
 		return false;
 	}

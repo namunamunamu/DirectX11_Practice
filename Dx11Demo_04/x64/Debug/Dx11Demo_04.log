@@ -1,11 +1,18 @@
-﻿  stdafx.cpp
-  CameraClass.cpp
-  ColorShaderClass.cpp
-  D3DClass.cpp
-  Dx11Demo_04.cpp
-  GraphicsClass.cpp
-  InputClass.cpp
+﻿  GraphicsClass.cpp
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
   ModelClass.cpp
-  SystemClass.cpp
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.h(38): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(58): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(193): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(194): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(200): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(206): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(208): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(209): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(209): error C2541: 'delete': 포인터가 아닌 개체를 삭제할 수 없습니다.
+c:\users\kencoor\documents\directx11_practice\dx11demo_04\modelclass.cpp(210): error C2065: 'm_Texture': 선언되지 않은 식별자입니다.
   코드를 생성하고 있습니다...
-  Dx11Demo_04.vcxproj -> C:\Users\kencoor\Downloads\Dx11Demo_04\x64\Debug\Dx11Demo_04.exe
