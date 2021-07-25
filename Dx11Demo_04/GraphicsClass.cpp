@@ -45,7 +45,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// 카메라 포지션 설정
-	m_Camera->SetPosition(0.0f, 0.0f, -15.0f);
+	m_Camera->SetPosition(0.0f, 0.0f, -5.0f);
 
 	// m_Model 객체 생성
 	m_Model = new ModelClass;
@@ -71,7 +71,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	// m_ColorShader 객체 초기화
 	if (!m_TextureShader->Initialize(m_Direct3D->GetDevice(), hwnd))
 	{
-		MessageBox(hwnd, L"Could not initialize the color shader object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the Texture shader object.", L"Error", MB_OK);
 		return false;
 	}
 

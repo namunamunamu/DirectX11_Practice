@@ -155,6 +155,13 @@ bool TextureClass::LoadTarga(char* filename, int& height, int& width)
 		return false;
 	}
 
+	// targa 대상 데이터에 대한 메모리를 할당
+	m_targaData = new unsigned char[imageSize];
+	if (!m_targaData)
+	{
+		return false;
+	}
+
 	//targa 대상 데이터 배열에 인덱스를 초기화합니다
 	int index = 0;
 
